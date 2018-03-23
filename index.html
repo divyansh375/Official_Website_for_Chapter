@@ -1,0 +1,595 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>IEEE-PCS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+
+
+
+
+$(document).ready(function(){
+
+
+
+setInterval(function(){
+$("#arrow").animate({top:"460px"}).animate({top:"450px"});
+
+});
+
+$("#arrow").click(function(){
+
+
+count=$('html,body').scrollTop();
+
+
+$('html,body').animate({scrollTop: count+600},1000);
+
+
+
+
+
+});
+
+
+
+
+
+setInterval(function(){
+$("#uparrow").animate({top:"460px"}).animate({top:"450px"});
+
+});
+
+$("#uparrow").click(function(){
+
+
+count=$('html,body').scrollTop();
+
+
+$('html,body').animate({scrollTop: count-800},1000);
+
+
+
+
+
+});
+
+
+
+
+$("#dot1").click(function(){
+
+	$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+	setTimeout(function(){$("#hello").attr("src","images/ima1.jpg");},600);
+
+	$("#dot1").css("opacity","1");
+	$("#dot2").css("opacity","0.4");
+	$("#dot3").css("opacity","0.4");
+
+
+});
+
+$("#dot2").click(function(){
+
+	$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+	setTimeout(function(){$("#hello").attr("src","images/ima2.jpeg");},600);
+	$("#dot1").css("opacity","0.4");
+	$("#dot2").css("opacity","1");
+	$("#dot3").css("opacity","0.4");
+
+});
+$("#dot3").click(function(){
+
+	$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+	setTimeout(function(){$("#hello").attr("src","images/ima3.jpeg");},600);
+	$("#dot1").css("opacity","0.4");
+	$("#dot2").css("opacity","0.4");
+	$("#dot3").css("opacity","1");
+
+});
+
+
+
+function fu(){
+
+	
+
+
+
+
+
+x= $("#hello").attr("src");
+
+
+
+if(x.localeCompare("../images/ima1.jpg")==0)
+{
+$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+setTimeout(function(){$("#hello").attr("src","images/ima2.jpeg");},600);
+$("#dot1").css("opacity","0.4");
+$("#dot2").css("opacity","1");
+$("#dot3").css("opacity","0.4");
+
+
+}
+
+
+else if(x.localeCompare("../images/ima2.jpeg")==0)
+{
+$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+setTimeout(function(){$("#hello").attr("src","images/ima3.jpeg");},600);
+$("#dot1").css("opacity","0.4");
+$("#dot2").css("opacity","0.4");
+$("#dot3").css("opacity","1");
+}
+
+
+else 
+{
+$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+setTimeout(function(){$("#hello").attr("src","images/ima1.jpg");},600);
+$("#dot1").css("opacity","1");
+$("#dot2").css("opacity","0.4");
+$("#dot3").css("opacity","0.4");
+}
+
+
+}
+
+
+
+setTimeout(function(){
+
+	$(".fade").animate({opacity: "0.6"},"slow");}
+	,2000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+});
+
+
+
+
+
+
+</script>
+
+
+	
+
+
+
+
+
+
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header class="header" style="background-color: black;height: 74px;">
+				<a class="logo" href="index.html"><img  class="logo" src="images/ieee.png" alt="logo" style="height:100px;width:100px;position:relative;top:10px;"></a>
+				
+				<nav>
+					<a href="#menu"><h3 style="color:white;text-decoration: none;position:relative;right:10px;top:10px;">Menu</h3></a>
+				</nav>
+
+				
+				
+
+
+				
+				
+
+			</ul>
+
+
+			
+			<img src="images/arrow.png" id="arrow" style="position:fixed;top:450px;z-index: 2;height: 35px;width: 35px;opacity:.6;">
+			<img src="images/uparrow.png" id="uparrow" style="position:fixed;top:450px;right:10px;z-index: 2;height: 35px;width: 35px;opacity:.6;">
+
+
+
+
+			</header>
+
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="Department/index.html">Gallery</a></li>
+					
+					
+					
+					<li><a href="events/index.html">Events</a></li>
+					<li><a href="https://vitieeepcs.wordpress.com">Blog</a></li>
+					
+				</ul>
+			</nav>
+
+
+		<!-- Banner -->
+
+
+
+
+		
+		
+		<div style="height:500px;">
+
+
+3			
+		<img  src="images/ima1.jpg" id="hello" style="z-index:-1;height:auto;max-height:600px;width:100%;display:block;margin: 0  auto;overflow:hidden;"> 
+
+					
+
+
+
+
+
+  <!-- <div style="min-height:800px;width:100%;background-color:black;opacity:0.4;margin-top: -800px;z-index:-1;"> -->
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+<h1  style="color:white;text-align: center;position: relative;bottom: :-200px;"></h1> 
+
+
+					 <p class="fade"  style="color:white;text-align: center;position: relative;top:-200px;opacity:0;font-size: 20px">The Art of Communication is the Language of Leadership</p> 
+
+
+ <ul class="fade" style="margin-left: auto; margin-right: auto;width: 8em;list-style-type: none;position: relative;top:-200px;opacity:0;"> 
+  <li style="float:left;margin: 2px;"><img src="images/dot.png" style="height: 20px;width: 20px" id="dot1"></li> 
+ <li style="float:left;margin: 2px;"><img src="images/dot.png" style="height: 20px;width: 20px;opacity:0.4;" id="dot2"></li> 
+ <li style="float:left;margin: 2px;"><img src="images/dot.png" style="height: 20px;width: 20px;opacity:0.4;" id="dot3"></li> 
+ </ul> 
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+</div>
+
+
+
+
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>Introduction</h2>
+						<p>  
+	“With great communication comes great confidence, greatpowers, and ultimately great success.” This 
+	statement might not have an authenticate source, but we at IEEE-Professional Communication Society 
+	believe it to the core. Chandler Bing, TyrionLannister, Sheldon Cooper- want to know what they share in 
+	common? Contrary to the popular saying, for them, words speak way louder than actions. They might be 
+	not be particularly liked by the people they are surrounded with, but definitely adored by everyone else, 
+	including us.<br><br>
+
+	We’re IEEE-PCS.<br> 
+
+	The ‘P’ is for Professional. The word speaks for itself. When we work, all of us make sure the work 
+	makes us stand apart from the rest. Our professional works is mixed with the appropriate amount of 
+	sassiness, which we make sure is displayed in the output. <br> 
+
+
+	The ‘C’ stands for Communication. Ever wondered what makes a person stand out in a crowd? We 
+	believe it is, without a doubt, his/her communication skills. That is what we are all about. We excel in 
+	communication, and make sure anyone who approaches us does so too.<br> 
+
+	The ‘S’ is for Society. We’re a team of chaps who, as a team, complete each other. The ever famous 
+	finger-fist quote defines us in a nutshell.<br>
+
+	With all things that have been mentioned above, you might arrive at a conclusion that we’re one of those 
+	“All Work, No Play” chapters. Trust us, we’ve got the “Play” domain covered as well. <br>
+  </p>
+											</header></div></section>
+
+
+
+		<!-- Highlights -->
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>Story</h2>
+						<p>IEEE Professional Communication Society was established in the year 2011 under the esteemed guidance of faculty coordinator, Dr. Anitha Devi. V. It is recognized as a dynamic body of enthusiastic and technically spirited engineers with a desire to create a change with innovation.
+
+						PCS (Professional Communication Society) is a brother society of IEEE (Institute of Electrical and Electronics Engineers) aimed at improving one’s communication skills in engineering, scientific and other technical environments. 
+						The major objective of IEEE PCS is to help engineers, technically to communicate better in their work place both verbally and non-verbally and also promotes and facilitates leading edge education and training in professional environments.
+
+						PCS has conducted a variety of events over the past few years like Cell Tech (Do it yourself workshop), Polyglot, Magnus, Bazinga Reloaded and Scholasticus power which have attracted students from all branches to showcase their communication, technical and management skills.</p>
+						<h2>Mission</h2>
+						<p>To foster a community which will be dedicated towards the understanding of engineering, scientific, technical environments et al. At the same time, remaining in pursuit of promoting effective communication in all of these dimensions.
+The outreach activities of the professional communication society include publishing quotes, running vocabulary building series, posting know our team series in addition to some occasional, witty idioms and proverbs. The weekly editorial insights are what singularly define the chapter's objective whereas, the chapter's blog gives the much-needed platform for its members to express and share their views and opinions. A much clearer perspective on our chapter's functioning can be taken from the chapter's website.</p>
+						<h2>Departments</h2>
+					</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="highlights">
+						<section>
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-vcard-o"><span class="label">Icon</span></a>
+									<h3>Management</h3>
+								</header>
+								<p>Successful chapters have strong leaders and managers that develop, support and encourage people. Whilst our chapter is a notion of communicating and verbal expertise, the management team implements the chapter's vision and makes sure that IEEE-PCS is moving impudently</p>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-files-o"><span class="label">Icon</span></a>
+									<h3>Editorial</h3>
+								</header>
+								<p>The very basis of the existence of the Professional Communications Society is its Editorial department. These “wordsmiths” stand out for their magical ability to create, write and edit a piece of technical information for communication purpose. Exchanging ideas, coming up with creative content and playing around with words, that's how the editorial department does its job.</p>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-floppy-o"><span class="label">Icon</span></a>
+									<h3>Technical</h3>
+								</header>
+								<p>- From building the backbone of the chapter’s website to managing the social networking front of the chapter, this is the technical department of IEEE-PCS. This is a team of team players. Kept on their toes, whenever the college fests are around the corner; they have played an important role in highlighting the chapter's name while garnering the attention of an impressive number of people.</p>
+							</div>
+						</section>
+						
+						<section>
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
+									<h3>Publicity And Marketing</h3>
+								</header>
+								<p>We at the publicity department facilitate the chapter’s ability to achieve its objectives and help build the credibility of our chapter. The team acts as a management tool to favorably influence the attitude towards our chapter.</p>
+							</div>
+						</section>
+						
+					
+
+							
+						
+
+						<section>
+							<div class="content">
+								<header>
+									<a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a>
+									<h3>Design</h3>
+								</header>
+								<p>Creativity is not only meant for painters and sculptures but it's also the essence of our designing team.The team is face behind all the vibrant, artistic, and aesthetic work on our website and blog . The  work of these creative minds involves making up posters and all the eye pleasing designing work that goes around here. And just like a painter has his brush and a photographer has his camera, they have their softwares like adobe photoshop,illustrator and muse to help create the magic they do.</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br>
+
+
+
+
+
+		<!-- Testimonials -->
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>OUR AIM</h2>
+						<p>We in IEEE-PCS aren’t any Shakespeares but we sure are masters of professional communication. Also, we aren’t saying we weave some magic to improve communication exponential times, but we sure lend a helping hand to make our members reach greater heights in this literary art.</p>
+					</header>
+					<div class="testimonials">
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>IEEE-PCS has been the cocoon to my butterfly that has kept me safe and has made sure I am ready for what the future holds. Being a part of this chapter has taught me more than just professional communication, it has taught me the values of life. It’s the people that make the most difference and I can confidently say that PCS has found the best gems of the lot. </p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Malvika Kharbanda</strong> <span>General Secretary IEEE-PCS</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>IEEE-PCS is by far the best thing which has happened to me after joining VIT.  Being an introvert for large part of my life, this chapter redefined the inchoate me in the way I look at people, communicate with everyone and above and everything else- taught me how to make lifelong friends. Humility and Punctuality is something which is highly regarded in this chapter, which has shaped all of us of what we are today. This has been a springboard for some wonderful moments spentwith the members and not a single day passes without this hallowed chapter being a part of me and I hope it continues to be so for years to come. Wish this fairytale journey continues forever….</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Nitin Nayak</strong> <span> President IEEE-PCS</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>Communication is the ability to convey thoughts effectively. It by itself is not sufficient to make a man capable, for he must also know how to behave in accordance with the situation. Professionalism is not only dressing presentably but, the art of communicating your thoughts in a concise manner. It is about ethics, etiquette, poise, and foremost accountability.</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Tanvi Maniyanghat</strong> <span>Vice President IEEE-PCS</span></p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Join Us</h3>
+							<p>We know you’ve been intrigued by all the get together and meetings that take place outside SMV every evening. We also know that you’ve been wanting to be a part of a chapter for some time now. Now we want you to know that if you’re one of those fun peeps, who’re great speakers, who’re great listeners, who’re great writers.</p>
+
+							<p>Join us for a chance to further enhance your verbal skills, or meet people who are equally good. Join us to showcase your hidden talents of writing articles, poetry, stories. Join us to have a revamp of personality. Join us to learn much more than communication.</p>
+						</section>
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<section>
+							<h4>Follow Us</h4>
+							<ul class="plain">
+								
+								<li><a href="https://www.facebook.com/PCSVIT/b"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="https://www.instagram.com/ieee_pcs_vit/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

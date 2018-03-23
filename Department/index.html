@@ -1,0 +1,579 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>IEEE-PCS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+
+
+
+$(document).ready(function(){
+setInterval(function(){
+$("#arrow").animate({top:"460px"}).animate({top:"450px"});
+
+});
+
+$("#arrow").click(function(){
+
+
+count=$('html,body').scrollTop();
+
+
+$('html,body').animate({scrollTop: count+800},1000);
+
+
+
+
+
+});
+
+
+
+setInterval(function(){
+$("#uparrow").animate({top:"460px"}).animate({top:"450px"});
+
+});
+
+$("#uparrow").click(function(){
+
+
+count=$('html,body').scrollTop();
+
+
+$('html,body').animate({scrollTop: count-800},1000);
+
+
+
+
+
+});
+
+
+
+$("#dot1").click(function(){
+
+	$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+	setTimeout(function(){$("#hello").attr("src","../images/ima1.jpg");},600);
+
+	$("#dot1").css("opacity","1");
+	$("#dot2").css("opacity","0.4");
+	$("#dot3").css("opacity","0.4");
+
+
+});
+
+$("#dot2").click(function(){
+
+	$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+	setTimeout(function(){$("#hello").attr("src","../images/ima2.jpeg");},600);
+	$("#dot1").css("opacity","0.4");
+	$("#dot2").css("opacity","1");
+	$("#dot3").css("opacity","0.4");
+
+});
+$("#dot3").click(function(){
+
+	$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+	setTimeout(function(){$("#hello").attr("src","../images/ima3.jpeg");},600);
+	$("#dot1").css("opacity","0.4");
+	$("#dot2").css("opacity","0.4");
+	$("#dot3").css("opacity","1");
+
+});
+
+ 
+
+function fu(){
+
+	
+
+
+
+
+
+x= $("#hello").attr("src");
+
+
+
+if(x.localeCompare("images/ima1.jpg")==0)
+{
+$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+setTimeout(function(){$("#hello").attr("src","../images/ima2.jpeg");},600);
+$("#dot1").css("opacity","0.4");
+$("#dot2").css("opacity","1");
+$("#dot3").css("opacity","0.4");
+
+
+}
+
+
+else if(x.localeCompare("images/ima2.jpeg")==0)
+{
+$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+setTimeout(function(){$("#hello").attr("src","../images/ima3.jpeg");},600);
+$("#dot1").css("opacity","0.4");
+$("#dot2").css("opacity","0.4");
+$("#dot3").css("opacity","1");
+}
+
+
+else 
+{
+$("#hello").animate({opacity: "0"},"slow").animate({opacity: "1"},"slow");
+setTimeout(function(){$("#hello").attr("src","../images/ima1.jpg");},600);
+$("#dot1").css("opacity","1");
+$("#dot2").css("opacity","0.4");
+$("#dot3").css("opacity","0.4");
+}
+
+
+}
+
+
+
+setTimeout(function(){
+
+	$(".fade").animate({opacity: ".6"},"slow");}
+	,2000);
+
+
+
+	
+
+
+
+});
+
+
+
+
+
+
+
+	
+	
+
+</script>
+
+
+	
+
+
+
+
+
+
+
+
+	</head>
+	<body class="is-preload" >
+
+		<!-- Header -->
+			<header class="header" style="background-color: black;height: 70px;">
+				<a class="logo" href="../index.html"><img  class="logo" src="../images/ieee.png" alt="logo" style="height:100px;width:100px;position:relative;top:10px;"></a>
+				
+				<nav>
+					<a href="#menu"><h3 style="color:white;text-decoration: none;position:relative;right:10px;top:10px;">Menu</h3></a>
+				</nav>
+
+				
+				
+
+
+				
+				
+
+			</ul>
+
+
+			
+			<img src="../images/arrow.png" id="arrow" style="position:fixed;top:450px;z-index: 2;height: 35px;width: 35px;opacity:.6;left:10px">
+			<img src="../images/uparrow.png" id="uparrow" style="position:fixed;top:450px;right:10px;z-index: 2;height: 35px;width: 35px;opacity:.6;">
+
+
+
+
+			</header>
+
+		<!-- Nav -->
+
+
+		<nav id="menu">
+				<ul class="links">
+					
+					<li><a href="../index.html">Home</a></li>
+					
+					
+					<li><a href="../events/index.html">Events</a></li>
+					<li><a href="https://vitieeepcs.wordpress.com">Blog</a></li>
+					
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+
+
+
+
+		
+		
+		<div style="height:500px;">
+
+
+			
+		<img  src="../images/ima1.jpg" id="hello" style="z-index:-1;height:auto;max-height:600px;width:100%;display:block;margin: 0  auto;overflow:hidden;"> 
+
+					
+
+
+
+
+
+ <!-- <div style="min-height:800px;width:200%;background-color:black;opacity:0.4;margin-top: -800px;z-index:-1;"> -->
+<!-- </div> -->
+
+<!-- <h1  style="color:white;text-align: center;position: relative;bottom:-200px;"></h1>  -->
+
+
+					 <p class="fade"  style="color:white;text-align: center;position: relative;top:-200px;opacity:0;font-size: 20px">The Art of Communication is the Language of Leadership</p> 
+
+
+ <ul class="fade" style="margin-left: auto; margin-right: auto;width: 8em;list-style-type: none;position: relative;top:-200px;opacity:0;"> 
+  <li style="float:left;margin: 2px;"><img src="../images/dot.png" style="height: 20px;width: 20px" id="dot1"></li> 
+ <li style="float:left;margin: 2px;"><img src="../images/dot.png" style="height: 20px;width: 20px;opacity:0.4;" id="dot2"></li> 
+ <li style="float:left;margin: 2px;"><img src="../images/dot.png" style="height: 20px;width: 20px;opacity:0.4;" id="dot3"></li> 
+ </ul> 
+
+
+
+</div>
+
+
+
+
+
+
+
+		<!-- Highlights -->
+			
+		<!-- CTA -->
+			
+
+		<!-- Testimonials -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>.</h2>
+						<p>  
+	
+  </p>
+											</header></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+
+		
+
+
+<h2>From Our Gallery..</h2>
+
+
+
+
+			
+
+<div  class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/img1.jpeg">
+      <img src="../images/img1.jpeg" alt="Trolltunga Norway" width="300" height="400">
+    </a>
+    
+  </div>
+</div>
+
+
+<div   class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/img2.jpeg">
+      <img src="../images/img2.jpeg" alt="Forest" width="300" height="400">
+    </a>
+    
+  </div>
+</div>
+
+<div  class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/img3.jpeg">
+      <img src="../images/img3.jpeg" alt="Northern Lights" width="300" height="400">
+    </a>
+    
+  </div>
+</div>
+
+<div  class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/img4.jpeg">
+      <img src="../images/img4.jpeg" alt="Mountains" width="300" height="400">
+    </a>
+   
+  </div>
+</div>
+
+
+
+
+
+<div  class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/img5.jpeg">
+      <img src="../images/img5.jpeg" alt="Mountains" width="300" height="400">
+    </a>
+   
+  </div>
+</div>
+
+
+
+
+<div  class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/img6.jpeg">
+      <img src="../images/img6.jpeg" alt="Mountains" width="300" height="400">
+    </a>
+   
+  </div>
+</div>
+
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/img7.jpeg">
+      <img src="../images/img7.jpeg" alt="Mountains" width="300" height="400">
+    </a>
+   
+  </div>
+</div>
+
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/img8.jpeg">
+      <img src="../images/img8.jpeg" alt="Mountains" width="300" height="400">
+    </a>
+   
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>.</h2>
+						<p>  
+	
+  </p>
+											</header></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+		<!-- Footer -->
+			<footer id="footer"  >
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Join Us</h3>
+							<p>We know you’ve been intrigued by all the get together and meetings that take place outside SMV every evening. We also know that you’ve been wanting to be a part of a chapter for some time now. Now we want you to know that if you’re one of those fun peeps, who’re great speakers, who’re great listeners, who’re great writers.</p>
+
+							<p>Join us for a chance to further enhance your verbal skills, or meet people who are equally good. Join us to showcase your hidden talents of writing articles, poetry, stories. Join us to have a revamp of personality. Join us to learn much more than communication.</p>
+						</section>
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<section>
+							<h4>Follow Us</h4>
+							<ul class="plain">
+								
+								<li><a href="https://www.facebook.com/PCSVIT/b"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="https://www.instagram.com/ieee_pcs_vit/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								
+							</ul>
+						</section>
+					</div>
+					
+						
+					</div>
+				
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+
+
+
+
+	</body>
+</html>
